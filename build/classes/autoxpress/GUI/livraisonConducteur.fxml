@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoxpress.GUI.LivraisonConducteurController">
+   <children>
+      <TableView fx:id="table_livraison" layoutX="117.0" layoutY="61.0" prefHeight="200.0" prefWidth="466.0">
+        <columns>
+          <TableColumn fx:id="colid_livraison" prefWidth="75.0" text="id_livraison" />
+          <TableColumn fx:id="coladdresse_liv" prefWidth="75.0" text="addresse_liv" />
+            <TableColumn fx:id="coldestinataire" prefWidth="75.0" text="destinataire" />
+            <TableColumn fx:id="colpoids" prefWidth="75.0" text="poids" />
+            <TableColumn fx:id="colcontenu" prefWidth="75.0" text="contenu" />
+            <TableColumn fx:id="colprix_liv" prefWidth="75.0" text="prix_liv" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAffLiv" layoutX="41.0" layoutY="175.0" mnemonicParsing="false" onAction="#afficherliv" text="Afficher" />
+   </children>
+</AnchorPane>

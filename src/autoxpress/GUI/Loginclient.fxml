@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="1329.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoxpress.GUI.LoginclientController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="1329.0" style="-fx-background-color: #292855;">
+         <children>
+            <Button layoutX="14.0" layoutY="155.0" mnemonicParsing="false" onAction="#retourtohome" style="-fx-background-color: white;" text="retour" />
+            
+         </children>
+      </Pane>
+      <Pane layoutX="365.0" layoutY="326.0" prefHeight="400.0" prefWidth="619.0" style="-fx-background-color: #292855;">
+         <children>
+            <Label layoutX="63.0" layoutY="92.0" text="Email:" textFill="WHITE" />
+            <Label layoutX="63.0" layoutY="170.0" text="Mot de passe :" textFill="WHITE" />
+            <TextField fx:id="btnmdb_cl" layoutX="198.0" layoutY="165.0" promptText="mdp" />
+            <Button fx:id="btnconnectcl" layoutX="384.0" layoutY="321.0" mnemonicParsing="false" onAction="#add_connecter" style="-fx-background-color: white;" text="se connecter" />
+            <TextField fx:id="btnmail_cl" layoutX="198.0" layoutY="87.0" promptText="mail" />
+            <Button fx:id="compteclient" layoutX="102.0" layoutY="321.0" mnemonicParsing="false" onAction="#comptecl" style="-fx-background-color: white;" text="Creer compte" />
+         </children>
+      </Pane>
+      <Label layoutX="608.0" layoutY="223.0" text="Login" textFill="#758bfd">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
